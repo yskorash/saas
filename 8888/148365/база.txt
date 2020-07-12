@@ -1,0 +1,33 @@
+(defrule first
+(first func)
+=>
+(add (first))
+)
+(defrule second
+(second func)
+=>
+(add (second))
+)
+(defrule third
+(third func)
+=>
+(add (third))
+)
+(defrule double 1
+(first func)
+(second func)
+=>
+(add (double1))
+)
+(defrule double 2
+(double1)
+(third)
+=>
+(add (double2))
+)
+(defrule double 3
+(second func)
+(third)
+=>
+(add (double3))
+)
